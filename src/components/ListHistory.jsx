@@ -8,7 +8,7 @@ export default function ListHistory({state, locations, removeLocation, searchByI
          <h3 className='mb-4 mb-sm-0'>List Of History</h3>
          {state.data.length != 0 && (
            <form onSubmit={searchByIP} className="d-flex flex-column flex-sm-row d-grid search gap-2">
-              <input name='search' type="text" className="form-control py-2 py-sm-0 me-2  my-sm-0" placeholder="Search..." required />
+              <input name='search' type="text" className="form-control py-2 py-sm-0 me-2  my-sm-0" placeholder="Search..." />
               <button type="submit" className="btn btn-dark py-2">Search</button>    
            </form>
          )}

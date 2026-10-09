@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useNavigate } from 'react-router';
 
 const key = 'locations';
@@ -61,6 +61,10 @@ export default function useLocalStore() {
   const navigate = useNavigate();
 
   const [state, dispatch] = React.useReducer(reducer, initialState);
+
+  useEffect(() => {
+    getAllLocations();
+  }, [state.search,state.currentPage]);
 
   const getLocations = () => {
     const locations = localStorage.getItem(key);

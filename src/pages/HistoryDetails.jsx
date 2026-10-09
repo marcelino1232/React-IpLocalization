@@ -14,7 +14,7 @@ export default function HistoryDetails() {
 
   useEffect(() => {
     getByIndex(params.ip);
-  }, []);
+  }, [params.ip]);
 
   return (
     <div className=" container">
