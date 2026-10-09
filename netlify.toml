@@ -1,0 +1,10 @@
+# Global build settings
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Fixes the "Page Not Found" 404 error on page refresh
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
