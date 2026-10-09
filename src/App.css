@@ -1,0 +1,124 @@
+
+.navbar-brand{
+    font-size: 1.4rem;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+}
+
+.app{
+    height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+.lookup{
+    background-color:lightskyblue;
+    width: min(600px, 96%);
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+}
+
+.input{
+    font-size: 1.4rem;
+    width: min(75%, 100%);
+    padding: 0.8rem 0.8rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border:none
+}
+
+.btn{
+    width: min(25%, 100%);
+}
+
+.table{
+    
+    overflow-x: auto;
+}
+.w-35{
+    width: 35%;
+}
+
+.pagination-size{
+    width: 8rem;
+}
+
+
+@media (max-width: 768px) {
+  .w-md-100{
+    width: 100%;
+  }
+  .w-35{
+    padding: 0.6rem 0;
+    width: 20%;
+  }
+  .movil{
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width:576px) {
+
+    .w-35{
+        width: 100%;
+    }
+    .lookup{
+        flex-direction: column;
+    }
+
+    .input{
+        width:100%;
+    }
+
+    .btn{
+        width:100%;
+        padding: 0.6rem 0.5rem;
+    }
+    .search{
+        width: 100%;
+    }
+
+}
+
+.map-size{
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+
+.loader {
+  /* Size of the spinner */
+  width: 150px;
+  height: 150px;
+  
+  /* Creates a circle shape */
+  border-radius: 50%;
+  
+  /* Light grey base track */
+  border: 1rem solid #f3f3f3;
+  
+  /* Blue moving indicator (only top border is colored) */
+  border-top: 1rem solid #3498db;
+  
+  /* Triggers the rotating animation smoothly and infinitely */
+  animation: spin 1s linear infinite;
+}
+
+/* Define the spinning behavior */
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+
